@@ -1,5 +1,9 @@
 #In this file my main objective is to demonstrate my attempt to map a port in a container. 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b7efc8c72ba53f24bc373b806ef668595e9ab67d
 #On this example we going to map the port 80(http) on a nginx server so the user can access from outside.
  
 
