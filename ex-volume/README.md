@@ -3,4 +3,4 @@
 
 docker container run -p(port) 8080(exposes that port for the user access):80(internal port that nginx starts by default) nginx(image to be downloaded). 
 
-#To access Nginx page go to any browser and type http://localhost:8080
+#To access Nginx page go to any browser and type http://localhost:8080 or your ip.
