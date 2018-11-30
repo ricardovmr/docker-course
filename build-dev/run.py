@@ -9,7 +9,7 @@ import getpass     #módulo getpass para obtenção do usuário
 
 class MyHTTPHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
-        logging.info("%s - - [%] %s\n"% (
+        logging.info("%s - - [%s] %s\n"% (
             self.client_address[0],
             self.log_date_time_string(),
             format%args
@@ -28,7 +28,7 @@ PORT = 8000
 httpd = socketserver.TCPServer(("", PORT), MyHTTPHandler)
 logging.info('escutando a porta: %s', PORT)
 logging.info('usuário: %s', getpass.getuser())
-httpd.server_forever() 
+httpd.serve_forever() 
 
 
 
